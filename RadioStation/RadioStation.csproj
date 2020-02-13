@@ -35,8 +35,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NAudio, Version=1.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.1.10.0\lib\net35\NAudio.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -69,6 +74,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Network\SoundTransmitter.cs" />
     <Compile Include="Model\Station\StationBlock\Block.cs" />
     <Compile Include="Model\Station\StationBlock\StationsBlockElementsList.cs" />
     <Compile Include="Model\Station\StationControlElements\ChangeDirection.cs" />
@@ -82,11 +88,15 @@
     <Compile Include="Model\Station\StationControlElements\ValueAndPosition.cs" />
     <Compile Include="Model\Station\StationModel.cs" />
     <Compile Include="Model\Station\TransmitterOrReciever.cs" />
+    <Compile Include="Model\Validation\ConditionChecker.cs" />
+    <Compile Include="Model\Validation\PartnerReflection\ReflectionConditons.cs" />
+    <Compile Include="Model\Validation\PartnerReflection\ReflectionOfConditionPartnerStation.cs" />
     <Compile Include="Model\Validation\Templates\ExceptSwitchTemplate.cs" />
     <Compile Include="Model\Validation\Templates\MutuallyExclusiveTemplate.cs" />
     <Compile Include="Model\Validation\Templates\PositionalSwitchConditionTemplate.cs" />
     <Compile Include="Model\Validation\Templates\Template.cs" />
     <Compile Include="Model\Validation\Templates\TwoPositionsElementTemplate.cs" />
+    <Compile Include="Model\Validation\Translator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -104,6 +114,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -112,8 +123,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\Network\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

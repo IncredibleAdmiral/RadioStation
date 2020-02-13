@@ -20,6 +20,11 @@ namespace RadioStation.Model.Station
                 }
             }
         }
+        static public Block GetStationBlock(string blockName)
+        {
+            return blocksList.Single(x => x.name == blockName);
+        }
+
 
         static public string FrequencyCount(TransmitterOrReciever kindOfBlock)
         {
