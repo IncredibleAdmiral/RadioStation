@@ -109,7 +109,6 @@ namespace RadioStation.Model.Network
             }
             catch
             {
-
             }
         }
         static public void Dispose()
