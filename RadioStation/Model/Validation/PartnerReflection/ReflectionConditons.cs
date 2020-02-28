@@ -3,9 +3,9 @@
     class ReflectionConditons
     {
   
-      readonly string blockName;
-        readonly string elementName;
-        public string positionName;
+     public  readonly string blockName;
+     public  readonly string elementName;
+     public           string positionName;
 
         public ReflectionConditons(string blockName, string elementName)
         {

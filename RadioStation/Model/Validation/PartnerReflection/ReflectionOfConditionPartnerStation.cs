@@ -20,14 +20,29 @@ namespace RadioStation.Model.Validation.PartnerReflection
             new ReflectionConditons("Transmitter","RodOfWork"),new ReflectionConditons("RightPNR","ukv")};
         }
 
-        static public void PatseConditionString(string conditionString)
+        static public string[] PatseConditionString(string conditionString)
         {
-            var conditionList = conditionString.Split(new char[] { '&', '=' });
+            return conditionString.Split(new char[] { '&','#','=' });
         }
 
-        public static void SetCondition()
+        public static void SetCondition(string conditionString)
         {
-            var elementConditonList.
+            var splitConditionStr = PatseConditionString(conditionString);
+            for (int i = 0; i < splitConditionStr.Length; i += 3)
+            {
+
+                var currentParameter = elementConditonList.SingleOrDefault(x => x.blockName == splitConditionStr[i] && x.elementName == splitConditionStr[i + 1]);
+                if (currentParameter != null)
+                {
+                    currentParameter.positionName = splitConditionStr[i + 2];
+                }
+                else if (splitConditionStr[i] == "TransmitterFrequence")
+                {
+                    partnerTransmitterFrequence = splitConditionStr[i + 1];
+                }
+                else if (splitConditionStr[i] == "ReceiverFrequence") ;
+            }          
+
         }
     }
 }

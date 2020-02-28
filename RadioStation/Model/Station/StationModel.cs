@@ -30,7 +30,7 @@ namespace RadioStation.Model.Station
         {
                  return blocksList.Single(x=> x.name == kindOfBlock.ToString()).elementsList.elements.Select(x=> x as PositionalSwitch).
                 Aggregate("", (acc, x) => acc + x.conditionList[x.currentPosition].value );
-                   
+                 
         }
 
         public static void InitStationsBlocks()

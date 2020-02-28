@@ -89,6 +89,7 @@
     <Compile Include="Model\Station\StationModel.cs" />
     <Compile Include="Model\Station\TransmitterOrReciever.cs" />
     <Compile Include="Model\Validation\ConditionChecker.cs" />
+    <Compile Include="Model\Validation\ConditionStringMaker.cs" />
     <Compile Include="Model\Validation\PartnerReflection\ReflectionConditons.cs" />
     <Compile Include="Model\Validation\PartnerReflection\ReflectionOfConditionPartnerStation.cs" />
     <Compile Include="Model\Validation\Templates\ExceptSwitchTemplate.cs" />
