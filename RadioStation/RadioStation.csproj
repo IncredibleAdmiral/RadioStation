@@ -74,6 +74,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Network\Listner.cs" />
+    <Compile Include="Model\Network\Sender.cs" />
     <Compile Include="Model\Network\SoundTransmitter.cs" />
     <Compile Include="Model\Station\StationBlock\Block.cs" />
     <Compile Include="Model\Station\StationBlock\StationsBlockElementsList.cs" />
@@ -124,6 +126,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
+    <Folder Include="View\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

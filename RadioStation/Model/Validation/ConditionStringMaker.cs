@@ -5,7 +5,7 @@ namespace RadioStation.Model.Validation
 {
     class ConditionStringMaker
     {
-        static string GetConditionString()
+       public static string GetConditionString()
         {
             var listeningReceptionSwitch = StationModel.GetStationBlock("Receiver").elementsList.GetItemByName("listeningReception") as PositionalSwitch;
 
