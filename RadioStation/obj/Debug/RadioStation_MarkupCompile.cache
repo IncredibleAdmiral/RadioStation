@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Radio\RadioStation\obj\Debug\
+C:\Radio\RadioStation\RadioStation\obj\Debug\
 RadioStation
 none
 false
 DEBUG;TRACE
-C:\Radio\RadioStation\App.xaml
-11151548125
+C:\Radio\RadioStation\RadioStation\App.xaml
+61036177755
 
-29-1314213319
-16-194632729
-MainWindow.xaml;
+36-1130507011
+16791448148
+MainWindow.xaml;View\RightPNRWindow.xaml;View\TheoryWindow.xaml;View\TPP13HWindow.xaml;View\TPP55Window.xaml;View\TransmitterWindow.xaml;
 
-True
+False
 

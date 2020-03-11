@@ -60,6 +60,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="View\RightPNRWindow.xaml.cs">
+      <DependentUpon>RightPNRWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TheoryWindow.xaml.cs">
+      <DependentUpon>TheoryWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TPP13HWindow.xaml.cs">
+      <DependentUpon>TPP13HWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TPP55Window.xaml.cs">
+      <DependentUpon>TPP55Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TransmitterWindow.xaml.cs">
+      <DependentUpon>TransmitterWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -72,6 +87,26 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\RightPNRWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TheoryWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TPP13HWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TPP55Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TransmitterWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Network\Listner.cs" />
@@ -126,9 +161,31 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="ViewModel\" />
-    <Folder Include="View\" />
+    <Resource Include="graf\B3-28_Background.png" />
+    <Resource Include="graf\b65af7cbe472112bdfc95f6b9c4dc1f6.jpg" />
+    <Resource Include="graf\back.jpg" />
+    <Resource Include="graf\BackgroundAmplifier.png" />
+    <Resource Include="graf\BackgroundReceiver.png" />
+    <Resource Include="graf\BackgroundRightPNR.png" />
+    <Resource Include="graf\BackgroundTPP13H.png" />
+    <Resource Include="graf\BackgroundTPP55.png" />
+    <Resource Include="graf\BackgroundTransmitter.png" />
+    <Resource Include="graf\blackLamp.png" />
+    <Resource Include="graf\DrSwDownXY.png" />
+    <Resource Include="graf\fullhdback.png" />
+    <Resource Include="graf\greenLamp.png" />
+    <Resource Include="graf\IndikatorAmpl.png" />
+    <Resource Include="graf\lampochkatr.png" />
+    <Resource Include="graf\LeftPNRBackground.png" />
+    <Resource Include="graf\MiniButton.png" />
+    <Resource Include="graf\Phone.png" />
+    <Resource Include="graf\RdStBackgroundReduced4.png" />
+    <Resource Include="graf\redLamp.png" />
+    <Resource Include="graf\shkalaf.png" />
+    <Resource Include="graf\SmoothSwitchPicture.png" />
+    <Resource Include="graf\ToogleImage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
