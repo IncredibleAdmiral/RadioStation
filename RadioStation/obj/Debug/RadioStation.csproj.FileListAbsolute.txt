@@ -4,11 +4,9 @@ C:\Radio\RadioStation\RadioStation\bin\Debug\RadioStation.pdb
 C:\Radio\RadioStation\RadioStation\bin\Debug\NAudio.dll
 C:\Radio\RadioStation\RadioStation\bin\Debug\NAudio.xml
 C:\Radio\RadioStation\RadioStation\obj\Debug\RadioStation.csprojAssemblyReference.cache
-C:\Radio\RadioStation\RadioStation\obj\Debug\MainWindow.g.cs
 C:\Radio\RadioStation\RadioStation\obj\Debug\App.g.cs
 C:\Radio\RadioStation\RadioStation\obj\Debug\RadioStation_MarkupCompile.cache
 C:\Radio\RadioStation\RadioStation\obj\Debug\RadioStation_MarkupCompile.lref
-C:\Radio\RadioStation\RadioStation\obj\Debug\MainWindow.baml
 C:\Radio\RadioStation\RadioStation\obj\Debug\RadioStation.g.resources
 C:\Radio\RadioStation\RadioStation\obj\Debug\RadioStation.Properties.Resources.resources
 C:\Radio\RadioStation\RadioStation\obj\Debug\RadioStation.csproj.GenerateResource.cache
@@ -37,3 +35,5 @@ C:\Radio\RadioStation\RadioStation\obj\Debug\View\AmplifierWindow.baml
 C:\Radio\RadioStation\RadioStation\obj\Debug\View\B328ReceiverWindow.baml
 C:\Radio\RadioStation\RadioStation\obj\Debug\View\B328TransmitterWindow.baml
 C:\Radio\RadioStation\RadioStation\obj\Debug\View\MainStationWindow.baml
+C:\Radio\RadioStation\RadioStation\obj\Debug\View\MainWindow.g.cs
+C:\Radio\RadioStation\RadioStation\obj\Debug\View\MainWindow.baml

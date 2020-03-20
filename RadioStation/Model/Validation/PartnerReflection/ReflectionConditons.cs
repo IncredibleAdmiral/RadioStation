@@ -10,7 +10,7 @@
         public ReflectionConditons(string blockName, string elementName)
         {
             this.blockName = blockName;
-            this.blockName = blockName;
+            this.elementName = elementName;
         }
     }
     
