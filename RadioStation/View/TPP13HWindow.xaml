@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RadioStation.View"
         mc:Ignorable="d"
-        Title="TPP13HWindow" Height="450" Width="800">
+        Title="TPP13HWindow" Height="512.849" Width="800">
     <Window.Background>
         <ImageBrush ImageSource="/graf/BackgroundTPP13H.png"/>
     </Window.Background>

@@ -25,3 +25,15 @@ C:\Radio\RadioStation\RadioStation\obj\Debug\View\RightPNRWindow.baml
 C:\Radio\RadioStation\RadioStation\obj\Debug\View\TheoryWindow.baml
 C:\Radio\RadioStation\RadioStation\obj\Debug\View\TPP13HWindow.baml
 C:\Radio\RadioStation\RadioStation\obj\Debug\View\TPP55Window.baml
+C:\Radio\RadioStation\RadioStation\obj\Debug\View\ReceiverWindow.g.cs
+C:\Radio\RadioStation\RadioStation\obj\Debug\View\ReceiverWindow.baml
+C:\Radio\RadioStation\RadioStation\obj\Debug\View\LeftPNRWindow.g.cs
+C:\Radio\RadioStation\RadioStation\obj\Debug\View\LeftPNRWindow.baml
+C:\Radio\RadioStation\RadioStation\obj\Debug\View\AmplifierWindow.g.cs
+C:\Radio\RadioStation\RadioStation\obj\Debug\View\B328ReceiverWindow.g.cs
+C:\Radio\RadioStation\RadioStation\obj\Debug\View\B328TransmitterWindow.g.cs
+C:\Radio\RadioStation\RadioStation\obj\Debug\View\MainStationWindow.g.cs
+C:\Radio\RadioStation\RadioStation\obj\Debug\View\AmplifierWindow.baml
+C:\Radio\RadioStation\RadioStation\obj\Debug\View\B328ReceiverWindow.baml
+C:\Radio\RadioStation\RadioStation\obj\Debug\View\B328TransmitterWindow.baml
+C:\Radio\RadioStation\RadioStation\obj\Debug\View\MainStationWindow.baml

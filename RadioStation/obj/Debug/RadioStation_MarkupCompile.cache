@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Radio\RadioStation\RadioStation\App.xaml
-61036177755
+12-1616903592
 
-36-1130507011
+42-498014179
 16791448148
-MainWindow.xaml;View\RightPNRWindow.xaml;View\TheoryWindow.xaml;View\TPP13HWindow.xaml;View\TPP55Window.xaml;View\TransmitterWindow.xaml;
+MainWindow.xaml;View\AmplifierWindow.xaml;View\B328ReceiverWindow.xaml;View\B328TransmitterWindow.xaml;View\LeftPNRWindow.xaml;View\MainStationWindow.xaml;View\ReceiverWindow.xaml;View\RightPNRWindow.xaml;View\TheoryWindow.xaml;View\TPP13HWindow.xaml;View\TPP55Window.xaml;View\TransmitterWindow.xaml;
 
 False
 

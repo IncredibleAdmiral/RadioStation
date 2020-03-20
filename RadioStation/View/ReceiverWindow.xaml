@@ -1,0 +1,401 @@
+﻿<Window x:Class="RadioStation.View.ReceiverWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RadioStation.View"
+        mc:Ignorable="d"
+        Title="ReceiverWindow" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="/graf/BackgroundReceiver.png"/>
+    </Window.Background>
+    <Window.Resources>
+        <Style x:Key="switches" TargetType="Image">
+            <Setter Property="Source" Value="/graf/DrSwDownXY.png"/>
+        </Style>
+        <Style x:Key="lamp" TargetType="Image">
+            <Setter Property="Source" Value="/graf/lampochkatr.png"/>
+        </Style>
+        <Style x:Key="FreqTextBlock" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="Yellow"/>
+        </Style>
+        <Style x:Key="toogle" TargetType="Image">
+            <Setter Property="Source" Value="/graf/ToogleImage.png"/>
+        </Style>
+        <Style x:Key="lampochkatr" TargetType="Image">
+            <Setter Property="Source" Value="/graf/lampochkatr.png"/>
+        </Style>
+        <!--<Style x:Key="Frequencyindicators" TargetType="TextBlock">
+            <Setter Property=""/>
+        </Style>-->
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="83*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="27*"/>
+            <RowDefinition Height="51*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="17*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="260*"/>
+            <ColumnDefinition Width="335*"/>
+            <ColumnDefinition Width="197*"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid  Grid.RowSpan="4"  Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="56*"/>
+                <ColumnDefinition Width="21*"/>
+                <ColumnDefinition Width="45*"/>
+                <ColumnDefinition Width="23*"/>
+                <ColumnDefinition Width="47*"/>
+                <ColumnDefinition Width="24*"/>
+                <ColumnDefinition Width="49*"/>
+                <ColumnDefinition Width="52*"/>
+                <ColumnDefinition Width="34*"/>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="47*"/>
+                <ColumnDefinition Width="24*"/>
+                <ColumnDefinition Width="45*"/>
+                <ColumnDefinition Width="26*"/>
+                <ColumnDefinition Width="46*"/>
+                <ColumnDefinition Width="48*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="43*"/>
+                <RowDefinition Height="26*"/>
+                <RowDefinition Height="39*"/>
+                <RowDefinition Height="52*"/>
+                <RowDefinition Height="28*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Column="1" Grid.Row="1"  />
+            <Image x:Name="ReceiverFreq_first_PS" Grid.Column="2" Grid.Row="3"  Style="{StaticResource switches}" RenderTransformOrigin="0.5,0.5" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="74.248"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="ReceiverFreq_second_PS" Grid.Column="4" Grid.Row="3" Style="{StaticResource switches}" RenderTransformOrigin="0.5,0.5" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="70.774"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="ReceiverFreq_third_PS" Grid.Column="6" Grid.Row="3" Style="{StaticResource switches}" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="73.141"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="ReceiverFreq_fourth_PS" Grid.Column="8" Grid.Row="3" Style="{StaticResource switches}"      >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="65.789"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="ReceiverFreq_fifth_PS" Grid.Column="11" Grid.Row="3" Style="{StaticResource switches}" RenderTransformOrigin="0.5,0.5" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="71.122"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="ReceiverFreq_sixth_PS" Grid.Column="13" Grid.Row="3" Style="{StaticResource switches}" RenderTransformOrigin="0.5,0.5" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="72.348"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="ReceiverFreq_seventh_PS" Grid.Column="15" Grid.Row="3" Style="{StaticResource switches}" RenderTransformOrigin="0.5,0.5" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="68.651"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Grid Grid.ColumnSpan="6" Grid.Column="2"  Grid.Row="1" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="31*"/>
+                    <ColumnDefinition Width="7*"/>
+                    <ColumnDefinition Width="14*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="15*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="15*"/>
+                    <ColumnDefinition Width="7*"/>
+                    <ColumnDefinition Width="14*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="14*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="13*"/>
+                    <ColumnDefinition Width="7*"/>
+                    <ColumnDefinition Width="9*"/>
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="18*"/>
+
+                </Grid.RowDefinitions>
+                <TextBlock  x:Name="RecIndikator1"  Grid.Column="1" Style="{StaticResource FreqTextBlock}"  Grid.Row="1" FontSize="14"  Background="#00000000"  />
+                <TextBlock  x:Name="RecIndikator2"  Grid.Column="3"  Style="{StaticResource FreqTextBlock}" Grid.Row="1" FontSize="14"  Background="#00000000"  />
+                <TextBlock  x:Name="RecIndikator3"  Grid.Column="5"  Style="{StaticResource FreqTextBlock}" Grid.Row="1" FontSize="14"  Background="#00000000"   />
+                <TextBlock  x:Name="RecIndikator4"  Grid.Column="7"  Style="{StaticResource FreqTextBlock}" Grid.Row="1" FontSize="14"  Background="#00000000"  />
+                <TextBlock  x:Name="RecIndikator5"  Grid.Column="9"  Style="{StaticResource FreqTextBlock}" Grid.Row="1" FontSize="14"  Background="#00000000"   />
+                <TextBlock  x:Name="RecIndikator6"  Grid.Column="11"   Style="{StaticResource FreqTextBlock}" Grid.Row="1" FontSize="14"  Background="#00000000"  />
+                <TextBlock  x:Name="RecIndikator7"  Grid.Column="13"  Style="{StaticResource FreqTextBlock}" Grid.Row="1" FontSize="14"  Background="#00000000"   />
+            </Grid>
+        </Grid>
+        <Grid  Grid.Row="4" Grid.RowSpan="6"  Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="43*"/>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="48*"/>
+                <RowDefinition Height="41*"/>
+                <RowDefinition Height="48*"/>
+                <RowDefinition Height="18*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="79*"/>
+                <ColumnDefinition Width="47*"/>
+                <ColumnDefinition Width="64*"/>
+                <ColumnDefinition Width="38*"/>
+                <ColumnDefinition Width="65*"/>
+                <ColumnDefinition Width="44*"/>
+                <ColumnDefinition Width="62*"/>
+                <ColumnDefinition Width="40*"/>
+                <ColumnDefinition Width="62*"/>
+                <ColumnDefinition Width="45*"/>
+                <ColumnDefinition Width="49*"/>
+
+            </Grid.ColumnDefinitions>
+            <Image x:Name="Receiver_throughCircuit_PS1" Style="{StaticResource switches}" Grid.Column="1" Grid.Row="3" RenderTransformOrigin="0.5,0.5"  >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="103.4"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Receiver_attenD6_PS" Style="{StaticResource switches}" Grid.Column="3" Grid.Row="3" RenderTransformOrigin="0.5,0.5" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="131"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Receiver_kindOfWorkTLG_PS" Style="{StaticResource switches}" Grid.Column="5" Grid.Row="3" RenderTransformOrigin="0.5,0.5" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="47.716"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Receiver_rodOFwork_PS" Style="{StaticResource switches}" Grid.Column="7" Grid.Row="3" RenderTransformOrigin="0.5,0.5" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="140.982"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Receiver_kindOfWorkTLF_PS" Style="{StaticResource switches}" Grid.Column="9" Grid.Row="3" RenderTransformOrigin="0.5,0.5" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="70.348"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Receiver_listeningReception_PS" Style="{StaticResource switches}" Grid.Column="7" Grid.Row="1" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="59.182"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Receiver_kindofcontrol_PS" Style="{StaticResource switches}" Grid.Column="5" Grid.Row="1" RenderTransformOrigin="0.5,0.5" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="142.714"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Receiver_kindofrlu_PS" Style="{StaticResource switches}" Grid.Column="9" Grid.Row="1" RenderTransformOrigin="0.5,0.5" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="136.507"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Grid Grid.ColumnSpan="6" Grid.Column="5"  Grid.Row="4" Grid.RowSpan="3" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="42*"/>
+                    <ColumnDefinition Width="69*"/>
+                    <ColumnDefinition Width="41*"/>
+                    <ColumnDefinition Width="28*"/>
+                    <ColumnDefinition Width="43*"/>
+                    <ColumnDefinition Width="23*"/>
+                    <ColumnDefinition Width="39*"/>
+                    <ColumnDefinition Width="17*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="32*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="20*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="Receiver_tone_SS" Style="{StaticResource switches}" Grid.Row="1" RenderTransformOrigin="0.5,0.5"  >
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="113.744"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="Receiver_a1a2f3_SS" Style="{StaticResource switches}" Grid.Row="1" Grid.Column="2" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="123.735"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="Receiver_b1_SS" Style="{StaticResource switches}" Grid.Row="1" Grid.Column="4" RenderTransformOrigin="0.5,0.5" >
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="119.043"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="Receiver_a1_SS" Style="{StaticResource switches}" Grid.Row="1" Grid.Column="6" RenderTransformOrigin="0.5,0.5" >
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="117.04"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+            </Grid>
+
+        </Grid>
+
+        <Grid Grid.Column="2"  Grid.RowSpan="10" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="22*"/>
+                <ColumnDefinition Width="16*"/>
+                <ColumnDefinition Width="19*"/>
+                <ColumnDefinition Width="18*"/>
+                <ColumnDefinition Width="22*"/>
+                <ColumnDefinition Width="19*"/>
+                <ColumnDefinition Width="18*"/>
+                <ColumnDefinition Width="18*"/>
+                <ColumnDefinition Width="45*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="36*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="77*"/>
+                <RowDefinition Height="45*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="18*"/>
+                <RowDefinition Height="19*"/>
+                <RowDefinition Height="17*"/>
+                <RowDefinition Height="33*"/>
+                <RowDefinition Height="19*"/>
+                <RowDefinition Height="34*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="3" Grid.Column="1"/>
+            <Image Grid.Row="3" Grid.Column="3"/>
+            <Image Grid.Row="3" Grid.Column="5"/>
+            <Image Grid.Row="3" Grid.Column="7"/>
+            <Image x:Name="Receiver_control_PS" Grid.Column="3" Grid.Row="5" Grid.ColumnSpan="3" Style="{StaticResource switches}" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="35.25"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Grid.Column="3" Grid.Row="7" Style="{StaticResource lampochkatr}"/>
+            <Image Grid.Column="5" Grid.Row="7" Style="{StaticResource lampochkatr}"/>
+            <Image x:Name="Receiver_og_TB" Grid.Column="3" Grid.Row="9"  Style="{StaticResource toogle}"  />
+            <Image x:Name="Receiver_power_TB" Grid.Column="5" Grid.Row="9" Style="{StaticResource toogle}"  />
+            <Image Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Source="/graf/shkalaf.png"/>
+            <Image Grid.Row="3" Grid.Column="1"  Style="{StaticResource lamp}" />
+            <Image Grid.Row="3" Grid.Column="3" Style="{StaticResource lampochkatr}"/>
+            <Image Grid.Row="3" Grid.Column="5" Style="{StaticResource lampochkatr}"/>
+            <Image Grid.Row="3" Grid.Column="7" Style="{StaticResource lampochkatr}"/>
+            <Image Grid.Row="11" Grid.Column="3" Style="{StaticResource lampochkatr}"/>
+            <Image Grid.Row="11" Grid.Column="5" Style="{StaticResource lampochkatr}"/>
+        </Grid>
+    </Grid>
+</Window>

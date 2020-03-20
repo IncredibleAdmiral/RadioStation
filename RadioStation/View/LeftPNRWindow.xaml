@@ -1,0 +1,176 @@
+﻿<Window x:Class="RadioStation.View.LeftPNRWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RadioStation.View"
+        mc:Ignorable="d"
+        Title="LeftPNRWindow" Height="797.91" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="/graf/LeftPNRBackground.png"/>
+    </Window.Background>
+    <Window.Resources>
+        <Style x:Key="switches" TargetType="Image">
+            <Setter Property="Source" Value="/graf/DrSwDownXY.png"/>
+
+        </Style>
+        <Style x:Key="buttons" TargetType="Button">
+            <Setter Property="FontSize" Value="8"/>
+
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="144*"/>
+            <ColumnDefinition Width="55*"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="24*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="133*"/>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="21*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="121*"/>
+
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="1" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15*"/>
+                <ColumnDefinition Width="16*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="16*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="16*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="16*"/>
+                <ColumnDefinition Width="6*"/>
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="63*"/>
+                <RowDefinition Height="45*"/>
+                <RowDefinition Height="13*"/>
+                <RowDefinition Height="44*"/>
+                <RowDefinition Height="19*"/>
+                <RowDefinition Height="44*"/>
+                <RowDefinition Height="22*"/>
+                <RowDefinition Height="44*"/>
+                <RowDefinition Height="72*"/>
+            </Grid.RowDefinitions>
+            <Button Style="{StaticResource buttons}" Grid.Column="1" Grid.Row="7"   >
+                <TextBlock>  ПРОВЕРКА
+                <LineBreak/> "  ЛАМП"</TextBlock>
+            </Button>
+            <Button Style="{StaticResource buttons}" Grid.Column="3" Grid.Row="7" Content="РАБОТА" Background="Green">
+
+            </Button>
+            <Button x:Name="LeftPNR_dop_FB" Content="ДОП." Style="{StaticResource buttons}" Grid.Column="5" Grid.Row="7" />
+            <Button Content="~60B" Style="{StaticResource buttons}" Grid.Column="7" Grid.Row="7"/>
+            <Button x:Name="LeftPNR_sl2_FB" Content="СЛ.2" Style="{StaticResource buttons}" Grid.Column="5" Grid.Row="5" />
+            <Button Content="СА" Style="{StaticResource buttons}" Grid.Column="7" Grid.Row="5"/>
+            <Button x:Name="LeftPNR_sl1_FB" Content="СЛ.1" Style="{StaticResource buttons}" Grid.Column="5" Grid.Row="3" />
+            <Button Content="ПК" Style="{StaticResource buttons}" Grid.Column="7" Grid.Row="3"/>
+            <Button x:Name="LeftPNR_pps2k_FB" Content="РРС 2К" Style="{StaticResource buttons}" Grid.Column="5" Grid.Row="1" />
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="2" Grid.RowSpan="4" Grid.ColumnSpan="3" >
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="17*"/>
+                <ColumnDefinition Width="22*"/>
+                <ColumnDefinition Width="34*"/>
+                <ColumnDefinition Width="16*"/>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="16*"/>
+                <ColumnDefinition Width="13*"/>
+
+                <ColumnDefinition Width="0*"/>
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="13*"/>
+                <RowDefinition Height="18*"/>
+                <RowDefinition Height="13*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="17*"/>
+                <RowDefinition Height="21*"/>
+                <RowDefinition Height="18*"/>
+                <RowDefinition Height="17*"/>
+                <RowDefinition Height="19*"/>
+
+            </Grid.RowDefinitions>
+            <Grid Grid.Column="5" Grid.Row="8" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="18*"/>
+                    <ColumnDefinition Width="41*"/>
+                    <ColumnDefinition Width="26*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="41*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Button x:Name="LeftPNR_rs_FB" Grid.Column="1" Grid.Row="1"  Content="PC" />
+            </Grid>
+            <Image x:Name="LeftPNR_l_PS" Style="{StaticResource switches}" Grid.Row="4" Grid.Column="1" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="144.547"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="LeftPNR_ll_PS" Style="{StaticResource switches}" Grid.Row="6" Grid.Column="1" RenderTransformOrigin="0.5,0.5" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="34.214"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="LeftPNR_tChCSelected_PS" Style="{StaticResource switches}" Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="84.26"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="LeftPNR_level_SS" Style="{StaticResource switches}" Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="110"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Grid Grid.Row="8" Grid.ColumnSpan="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="58*"/>
+                    <ColumnDefinition Width="45*"/>
+                    <ColumnDefinition Width="117*"/>
+                    <ColumnDefinition Width="49*"/>
+                    <ColumnDefinition Width="7*"/>
+
+                </Grid.ColumnDefinitions>
+                <Image x:Name="LeftPNR_IP_TB" Grid.Column ="1" Source="/graf/ToogleImage.png" />
+                <Image x:Name="LeftPNR_PSh_TB" Grid.Column ="3" Source="/graf/ToogleImage.png" />
+            </Grid>
+            <Grid Grid.ColumnSpan="2" Grid.Column="5" Grid.RowSpan="2" Grid.Row="6" VerticalAlignment="Top" >
+
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>

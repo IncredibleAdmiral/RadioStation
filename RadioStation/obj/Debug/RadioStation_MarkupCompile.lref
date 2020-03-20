@@ -6,4 +6,10 @@ FC:\Radio\RadioStation\RadioStation\View\RightPNRWindow.xaml;;
 FC:\Radio\RadioStation\RadioStation\View\TheoryWindow.xaml;;
 FC:\Radio\RadioStation\RadioStation\View\TPP13HWindow.xaml;;
 FC:\Radio\RadioStation\RadioStation\View\TPP55Window.xaml;;
+FC:\Radio\RadioStation\RadioStation\View\ReceiverWindow.xaml;;
+FC:\Radio\RadioStation\RadioStation\View\LeftPNRWindow.xaml;;
+FC:\Radio\RadioStation\RadioStation\View\AmplifierWindow.xaml;;
+FC:\Radio\RadioStation\RadioStation\View\B328ReceiverWindow.xaml;;
+FC:\Radio\RadioStation\RadioStation\View\B328TransmitterWindow.xaml;;
+FC:\Radio\RadioStation\RadioStation\View\MainStationWindow.xaml;;
 
